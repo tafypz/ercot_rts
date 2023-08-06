@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools~=68.0", "wheel~=0.41"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ercot_rts"
+version = "2023.08.01"
+license = {text = "Apache-2.0"}
+description = "ERCOT Realtime Settlement Library"
+readme = "README.rst"
+authors     = [
+    {name = "tafypz"}
+]
+keywords    = ["energy"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+]
+requires-python = ">=3.11.0"
+dependencies = [
+    "beautifulsoup4>=4.12.2",
+    "requests>=2.31.0"
+]
+
+[project.urls]
+repository = "https://github.com/tafypz/ercot_rts.git"
+
